@@ -31,6 +31,7 @@ function okey(){
 }
 function borrar(){
     document.getElementById('password').value="";
+    document.getElementById("monto").value="";
 
 }
 function cliar()
