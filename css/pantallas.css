@@ -1,0 +1,86 @@
+.triangulodentro{
+    
+        width: 0;
+        height: 0;
+        border-left: 15px solid rgb(109, 68, 40);  
+        border-top: 14px solid transparent;
+        border-bottom: 15px solid transparent;  
+}
+.triangulodentro1{
+    
+    width: 0;
+    height: 0;
+    border-right: 15px solid rgb(109, 68, 40);  
+    border-top: 14px solid transparent;
+    border-bottom: 15px solid transparent;  
+}
+.men1{
+    
+    height: 150px;
+    margin-top: 9px;
+    float: left;
+}
+.men2{
+    
+    height: 150px;
+    margin-top: 9px;
+     float: right;
+     
+}
+.men1 div{
+    margin-top: 8px;
+}
+.men2 div{
+    margin-top: 8px; 
+}
+.letra{
+    font-size: 13px;
+    margin-top: -7px; 
+    color: rgb(109, 68, 41);
+}
+.letra2{
+    font-size: 13px;
+    margin-top: -8px;
+    margin-left: -100px;
+    color: rgb(109, 68, 41);
+}
+.letra3{
+    font-size: 13px;
+    margin-top: -8px;
+    margin-left: -70px;
+    color: rgb(109, 68, 41);
+}
+.letra4{
+    font-size: 13px;
+    margin-top: -8px;
+    margin-left: -80px;
+    color: rgb(109, 68, 41);
+}
+.letra5{
+    font-size: 13px;
+    margin-top: -8px;
+    margin-left: -22px;
+    color: rgb(109, 68, 41);
+}
+.monto_retiro{
+    width: 100px;
+    height: 12px;
+    margin: 0px auto;
+    
+
+}
+.monto_retiro input {
+    width: 40px;
+    height: 16px;
+    font-size: 16px;
+    background-color: rgb(158, 157, 88);
+    border: none;
+}
+.a{
+    font-size: 17px;
+    margin-left: 40px;
+    color: rgb(109, 68, 41);
+
+}
+
+

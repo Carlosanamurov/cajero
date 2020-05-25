@@ -4,25 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/pantallas.css">
 </head>
 <body>
     <div id="cajero">
         <div id="header">
             <div id="aside1">
-                
-                
-                
+             <div class="lado1">
+                 <div>
+                     <button class="l1"><div class="triangulo1" onclick="b1()"></div></button>
+                 </div>
+                 <div>
+                    <button class="l1"><div class="triangulo1" onclick="b2()"></div></button>
+                </div>
+                <div>
+                    <button class="l1"><div class="triangulo1"onclick="b3()"></div></button>
+                </div>
+                <div>
+                    <button class="l1"><div class="triangulo1" onclick="b4()"></div></button>
+                </div>
+
+             </div>
+
             
             </div>
             <div id="centro">
-                <div class="contemido" >
-                    <label for="a" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >¡BIENVENIDO AL BANCO!</label>
-                    <!--<input type="password" name="" id="password"><br>-->
-                </div>
+
+                     
+                     <div class="contenido" id="p1" style="display:block;" >
+                            <div>
+                                <label for="a" style="font-size: 15px; padding-left: 20px; color: rgb(109, 68, 41);">¡BIENVENIDO AL BANCO!</label>
+                            <br>
+                            </div>
+                            <div>
+                                <label for="a"style="font-size: 15px; padding-left: 20px; color: rgb(109, 68, 41);">Por favor digite su clave.</label><br>
+                                <input type="password" class="contra" id="password" >
+                                <p id="mensaje"></p>
+                            </div>
+                     </div>
+
+
+
+                     <div class="contenido" id="p2" style="display: none;">
+                    
+                            <label for="a" style="font-size: 23px; padding-left: 80px; color: rgb(109, 68, 41);">Menu Principal</label>
+                            <br>
+                        
+                            <div class="men1">
+                                <div class="triangulodentro"><p class="letra">RETIRO</p></div>
+                                <div class="triangulodentro"><p class="letra">CONSULTA</p></div>
+                                <div class="triangulodentro"> <p class="letra">OPERACIONES</p></div>     
+                                <div class="triangulodentro"> <p class="letra"></p></div>
+                            </div>
+                        
+
+                            <div class="men2">                        
+                                <div class="triangulodentro1"><p class="letra2">TRANFERENCIA</p></div>
+                                <div class="triangulodentro1"><p class="letra2">ULTIMOS MOVIMIENTOS</p></div>
+                                <div class="triangulodentro1"><p class="letra2"></p></div>
+                                <div class="triangulodentro1"><p class="letra2"></p></div>      
+                            </div>
+
+                     </div>
+
+
+
+
+                     <div class="contenido" id="p3" style="display: none;">
+                    
+                        <label for="a" style="font-size: 23px; padding-left: 80px; color: rgb(109, 68, 41);">Menu Principal</label>
+                        <br>
+                
+                             <div class="men1">
+                                <div class="triangulodentro"><p class="letra">RETIRO SOLES</p></div>
+                                <div class="triangulodentro"><p class="letra"></p></div>
+                                <div class="triangulodentro"> <p class="letra"></p></div>     
+                                <div class="triangulodentro"> <p class="letra"></p></div>
+                             </div>
+                
+
+                            <div class="men2">                    
+                                <div class="triangulodentro1"><p class="letra3">RETIRO DOLARES</p></div>
+                                <div class="triangulodentro1"><p class="letra3"></p></div>
+                                <div class="triangulodentro1"><p class="letra3"></p></div>
+                                <div class="triangulodentro1"><p class="letra3">CANCELAR</p></div>         
+                            </div>
+
+                     </div>
+
+
+
+                     <div class="contenido" id="p4" style="display: none;">
+                    
+                        <label for="a" style="font-size: 23px; padding-left: 80px; color: rgb(109, 68, 41);">RETIRO</label>
+                        <br>
+                
+                             <div class="men1">
+                                <div class="triangulodentro"><p class="letra">S/.20</p></div>
+                                <div class="triangulodentro"><p class="letra">S/.150</p></div>
+                                <div class="triangulodentro"><p class="letra">S/.300</p></div>     
+                                <div class="triangulodentro"><p class="letra">S/.500</p></div>
+                             </div>
+                
+
+                            <div class="men2">                    
+                                <div class="triangulodentro1"><p class="letra2">OTRAS CANTIDADES</p></div>
+                                <div class="triangulodentro1"><p class="letra2"></p></div>
+                                <div class="triangulodentro1"><p class="letra2"></p></div>
+                                <div class="triangulodentro1"><p class="letra3">CANCELAR</p></div>         
+                            </div>
+
+                     </div>
+
+
+                     <div class="contenido" id="p5" style="display: none;">
+                    
+                        <label for="a" style="font-size: 12px;  color: rgb(109, 68, 41);">INGRESE EL MONTO A RETIRAR EN MULTIPLOS DE 10</label>
+                        <br> 
+                                <div class="monto_retiro">
+                                    <label for="a" style="font-size: 19px;">S/.</label>
+                                    <input type="text" id="monto" >
+                                </div>
+                            
+                
+                            
+                
+
+                            <div class="men2">                    
+                                <div class="triangulodentro1"><p class="letra4"></p></div>
+                                <div class="triangulodentro1"><p class="letra4">CONFIRMAR</p></div>
+                                <div class="triangulodentro1"><p class="letra4">CORREGIR</p></div>
+                                <div class="triangulodentro1"><p class="letra4">CANCELAR</p></div>         
+                            </div>
+
+                     </div>
+
+
+                     <div class="contenido" id="p6" style="display: none;">
+                    
+                        <label for="a" style="font-size: 17px;  color: rgb(109, 68, 41); margin-left: 40px;">TRANSACCION PROCESADA</label>
+                        <br> 
+                            
+                                    <label for="a"  class="a">¿Desea realizar otra transaccion?</label>
+                                    
+                               
+                            
+                
+                            
+                
+
+                            <div class="men2">                    
+                                <div class="triangulodentro1"><p class="letra4"></p></div>
+                                <div class="triangulodentro1"><p class="letra4"></p></div>
+                                <div class="triangulodentro1"><p class="letra5">SI</p></div>
+                                <div class="triangulodentro1"><p class="letra5">NO</p></div>         
+                            </div>
+
+                     </div>
+                     <div class="contenido" id="p7" style="display: none;">
+                    
+                        <label for="a" style="font-size: 17px;  color: rgb(109, 68, 41); margin-left: 40px;"></label>
+                        <br> 
+                            
+                                    <label for="a"  class="a"> Gracias, Hasta Luego...</label>
+
+                     </div>
+                
             </div>
+
+
             <div id="aside2">
+                <div class="lado2">
+                    <div>
+                        <button class="l1"> <div class="triangulo" onclick="b5()"></div> </button>
+                    </div>
+                    <div>
+                       <button class="l1"> <div class="triangulo" onclick="b6()"></div> </button>
+                   </div>
+                   <div>
+                       <button class="l1"> <div class="triangulo"onclick="b7()"></div></button>
+                   </div>
+                   <div>
+                       <button class="l1"> <div class="triangulo"onclick="b8()"></div> </button>
+                   </div>
+   
+                </div>
                
 
             </div>
@@ -33,20 +201,20 @@
                 <div class="numero">
                     <div>
                         <button id="n1" onclick="add('1')">1</button>
-                        <button id="n2"onclick="add('2')">2</button>
-                         <button id="n3"onclick="add('3')" >3</button>
+                        <button id="n2" onclick="add('2')">2</button>
+                        <button id="n3" onclick="add('3')">3</button>
                      </div>
                      
                       <div>
                         <button id="n4" onclick="add('4')" >4</button>
-                        <button id="n5"onclick="add('5')" >5</button>
+                        <button id="n5" onclick="add('5')" >5</button>
                         <button id="n6" onclick="add('6')">6</button>
             
                       </div>
                       <div>
-                        <button id="n7" onclick="add('7')">7</button>
-                        <button id="n8" onclick="add('8')">8</button>
-                        <button id="n9" onclick="add('9')">9</button>
+                        <button id="n7"onclick="add('7')">7</button>
+                        <button id="n8"onclick="add('8')">8</button>
+                        <button id="n9"onclick="add('9')">9</button>
             
                       </div>
                       <div>
@@ -62,13 +230,16 @@
             <div id="opera">
                 <div class="op">
                         <div>
-                            <button id="cancelar" style="background-color: red; color: white; border-color: black; ">CANCELAR</button>
+                            <button class="rojo" id="cancelar" onclick="cancel()" style="background-color: red; color: white; border-color: rgb(66, 66, 66); ">CANCELAR</button>
                         </div>
                         <div>
-                            <button id="clear" style="background-color: orange; color: white; border-color: black;">CLEAR</button>
+                            <button class="amarillo" id="clear" onclick="clear()" style="background-color: orange; color: white; border-color: rgb(66, 66, 66);">CLEAR</button>
                         </div>
                         <div>
-                            <button id="ok" style="background-color: green; color: white; border-color:black;">OK</button>
+                            <button class="vere" id="ok" onclick="okey()" style="background-color: green; color: white; border-color:rgb(66, 66, 66);">OK</button>
+                        </div>
+                        <div>
+                            <button class="vere" id="ok" style="background-color: rgb(80, 79, 79); border-color:rgb(66,66,66) ;"></button>
                         </div>
 
                 </div>
@@ -77,33 +248,40 @@
 
 
             <div id="exter">
-             <!-- 
+             
                  <div class="moneda">
 
-                    <div class="l1">
-                    <label for="a">CAR </label>
-                    <input type="text" name="barra1" id="car">
+                    <div class="mo1">
+                    <label for="a" style="font-size: 15px; color: white;">CAR </label>
+                    <div class="arriba"></div>
                     </div>
                     
-                    <div class="l2">
-                    <label for="a">RECEIPT </label>
-                    <div id="rece"></div>
+                    <div class="mo1">
+                    <label for="a" style="font-size: 15px; color: white;" >RECEIPT </label>
+                    <div class="arriba"></div>
                     </div>
                     
 
                 </div>
                 <div class="billete">
-                    <label for="a">CASH</label>
-                    <div id="cash"></div>
-                    <label for="a">DEPOSIT</label>
-                    <div id="depo"></div>
+                    <div class="b1">
+                    <label for="a" style="font-size: 15px;color: white;">CASH</label>
+                    <div class="abajo"></div>
+                    </div>
+                    
+                    <div class="b1">
+                    <label for="a" style="font-size: 15px;color: white;" >DEPOSIT</label>
+                    <div class="abajo"></div>
+                    </div>
+                   
                 </div>
-             -->   
+              
                 
                 
             </div>
         </div>      
-    </div>      
+    </div> 
+    <script src="js/funciones.js"></script>     
     
 </body>
 </html>
