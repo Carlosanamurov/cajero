@@ -33,7 +33,15 @@ function borrar(){
     document.getElementById('password').value="";
 
 }
+function cliar()
+{
+    var pantalla1= document.getElementById("p1");
+    if (pantalla1.style.display=="block") {
+        document.getElementById("p1").style.display="block";
+        borrar();
+    }
 
+}
  function cancel(){
      var pantalla2= document.getElementById("p2");
      var pantalla3= document.getElementById("p3");
